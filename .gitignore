@@ -1,0 +1,7 @@
+.binance
+
+.vscode
+
+*.env
+
+__pycache__
