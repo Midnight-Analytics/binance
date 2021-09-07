@@ -44,6 +44,8 @@ try:
         else:
             pass
             print("No new coins")
+            requests.get(base_url + "Persistence Test")
+
         sleep(15)
 except:
     requests.get(base_url + "Process has failed")
