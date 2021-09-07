@@ -38,13 +38,12 @@ try:
             print(base_url + str(new_coins).replace('[','').replace(']','').replace("'", "").replace(" ", ","))
             binance_endpoints.overwrite_previous_list(ticker, ticker_pairs)
 
-            print("sent coin names")
-            print(new_coins)
+#            print("sent coin names")
+#            print(new_coins)
 
         else:
             pass
-            print("No new coins")
-            requests.get(base_url + "Persistence Test")
+#            print("No new coins")
 
         sleep(15)
 except:
