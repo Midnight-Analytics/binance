@@ -1,11 +1,14 @@
 from binance.client import Client
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 #import json
 import numpy as np
 
 
 # requires environment variables to be set prior to use
-client = Client(os.environ['binance_key'], os.environ['binance_secret'])
+client = Client(os.getenv('binance_key'), os.getenv('binance_secret'))
 
 
 

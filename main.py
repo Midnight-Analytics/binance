@@ -5,12 +5,15 @@ import sys
 
 import requests
 
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 ticker = 'USDT'
 
-bot_id = os.environ['telegram_bot_key']
-chat_id = os.environ['telegram_chat_id']
+bot_id = os.getenv('telegram_bot_key')
+chat_id = os.getenv('telegram_chat_id')
 
 
 base_url  = f'https://api.telegram.org/bot{bot_id}/sendMessage?chat_id={chat_id}&text='
